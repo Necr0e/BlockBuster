@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
 {
     //Config params
     [SerializeField] Paddle paddle = null;
-    [SerializeField] float xVelocity = 2f;
+    [SerializeField] float xVelocity = 1f;
     [SerializeField] float yVelocity = 8f;
     [SerializeField] AudioClip[] ballSounds = null;
     float randomFactor = 0.5f;
@@ -18,9 +18,6 @@ public class Ball : MonoBehaviour
     //States
     Vector2 ballOffset;
     bool hasStarted = false;
-
-
-
     private void Start()
     {
         ballOffset = transform.position - paddle.transform.position;

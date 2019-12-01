@@ -60,6 +60,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 3e4dc42f28532694ea01596ea6c2c511, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &4354402111827134805
 CircleCollider2D:
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paddle: {fileID: 0}
   xVelocity: 2
-  yVelocity: 15
+  yVelocity: 7
   ballSounds:
   - {fileID: 8300000, guid: b51fd51ecd4dafd4aae595e062bbaa02, type: 3}
   - {fileID: 8300000, guid: b1d80b7a8bd9d1e4f9b6b58ebb68acce, type: 3}
